@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Centro da Vila 10</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/layout-cv-10.png?v=1687126077070">
+</head>
+<body onclick="clicou()">
+    <h1>Centro da vila 10</h1>
+    <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/layout-cv-10.png?v=1687126077070" class="fotocv">
+    
+    <br><br><br><br>
+
+  <button class="button" onclick="showOverlay1()">Defesas</button>
+  <button class="button" onclick="showOverlay2()">Exército</button>
+  <button class="button" onclick="showOverlay3()">Recurso</button>
+
+
+  <div class="overlay" id="overlay1" onmouseleave="saiu()" onmouseover="entrou()">
+    <h2>Defesas</h2>
+    <br>
+    <div class="itens-div" id="canhaoFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Cannon13.png?v=1687126075354" class="itens-img">
+        <h3 class="itens-nome">Canhão</h3>
+        <p class="itens-nivel">Nivel Máximo: 13</p>
+        <button class="itens-feito" onclick="feito('canhaoFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="arqueiraFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Archer_Tower13.png?v=1687126074945" class="itens-img">
+        <h3 class="itens-nome">Arqueira</h3>
+        <p class="itens-nivel">Nivel Máximo: 13</p>
+        <button class="itens-feito" onclick="feito('arqueiraFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="morteiroFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Mortar8.png?v=1687126077453" class="itens-img">
+        <h3 class="itens-nome">Morteiro</h3>
+        <p class="itens-nivel">Nivel Máximo: 8</p>
+        <button class="itens-feito" onclick="feito('morteiroFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="aereaFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Air_Defense8.png?v=1687126074572" class="itens-img">
+        <h3 class="itens-nome">Áerea</h3>
+        <p class="itens-nivel">Nivel Máximo: 8</p>
+        <button class="itens-feito" onclick="feito('aereaFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="magoFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Wizard_Tower9.png?v=1687126077855" class="itens-img">
+        <h3 class="itens-nome">Mago</h3>
+        <p class="itens-nivel">Nivel Máximo: 9</p>
+        <button class="itens-feito" onclick="feito('magoFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="teslaFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Hidden_Tesla8.png?v=1687126076291" class="itens-img">
+        <h3 class="itens-nome">Tesla</h3>
+        <p class="itens-nivel">Nivel Máximo: 8</p>
+        <button class="itens-feito" onclick="feito('teslaFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="xbestaFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Xbow4.png?v=1687126074186" class="itens-img">
+        <h3 class="itens-nome">X-besta</h3>
+        <p class="itens-nivel">Nivel Máximo: 4</p>
+        <button class="itens-feito" onclick="feito('xbestaFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="torreinfFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Inferno_tower3.png?v=1687126076678" class="itens-img">
+        <h3 class="itens-nome">Torre Inf</h3>
+        <p class="itens-nivel">Nivel Máximo: 3</p>
+        <button class="itens-feito" onclick="feito('torreinfFeito')">Concluir</button>
+    </div>
+  </div>
+
+
+  <div class="overlay" id="overlay2" onmouseleave="saiu()" onmouseover="entrou()">
+    <h2>Exército</h2>
+    <br>
+    <div class="itens-div" id="laboratorioFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Laboratory13.png?v=1687130195738" class="itens-img">
+        <h3 class="itens-nome">Laboratório</h3>
+        <p class="itens-nivel">Nivel Máximo: 8</p>
+        <button class="itens-feito" onclick="feito('laboratorioFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="acampamentoFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Army_Camp12.png?v=1687130197292" class="itens-img">
+        <h3 class="itens-nome">Acampamento</h3>
+        <p class="itens-nivel">Nivel Máximo: 8</p>
+        <button class="itens-feito" onclick="feito('acampamentoFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="quartelFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Barracks16.png?v=1687130196555" class="itens-img">
+        <h3 class="itens-nome">Quartel</h3>
+        <p class="itens-nivel">Nivel Máximo: 12</p>
+        <button class="itens-feito" onclick="feito('quartelFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="feiticoFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Spell_Factory7.png?v=1687130195350" class="itens-img">
+        <h3 class="itens-nome">Feitiço</h3>
+        <p class="itens-nivel">Nivel Máximo: 5</p>
+        <button class="itens-feito" onclick="feito('feiticoFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="qNegroFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Dark_Barracks9.png?v=1687130196129" class="itens-img">
+        <h3 class="itens-nome">Quartel N.</h3>
+        <p class="itens-nivel">Nivel Máximo: 7</p>
+        <button class="itens-feito" onclick="feito('qNegroFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="pNegroFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Dark_Spell_Factory5.png?v=1687130194960" class="itens-img">
+        <h3 class="itens-nome">Feitiço N.</h3>
+        <p class="itens-nivel">Nivel Máximo: 5</p>
+        <button class="itens-feito" onclick="feito('pNegroFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="barbaroFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/BarbarianKing_Altar_info.png?v=1687130194567" class="itens-img">
+        <h3 class="itens-nome">Bárbaro</h3>
+        <p class="itens-nivel">Nivel Máximo: 30</p>
+        <button class="itens-feito" onclick="feito('barbaroFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="arqueiraFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/ArcherQueen_Altar_info.png?v=1687130197687" class="itens-img">
+        <h3 class="itens-nome">Arqueira</h3>
+        <p class="itens-nivel">Nivel Máximo: 30</p>
+        <button class="itens-feito" onclick="feito('arqueiraFeito')">Concluir</button>
+    </div>
+  </div>
+
+
+  <div class="overlay" id="overlay3" onmouseleave="saiu()" onmouseover="entrou()">
+    <h2>Recursos</h2>
+    <br>
+    <div class="itens-div" id="minaOuroFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Gold_Mine15.png?v=1687131482848" class="itens-img">
+        <h3 class="itens-nome">Mina Ouro</h3>
+        <p class="itens-nivel">Nivel Máximo: 13</p>
+        <button class="itens-feito" onclick="feito('minaOuroFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="coletorElixirFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Elixir_Collector15.png?v=1687131482442" class="itens-img">
+        <h3 class="itens-nome">Col Elixir</h3>
+        <p class="itens-nivel">Nivel Máximo: 13</p>
+        <button class="itens-feito" onclick="feito('coletorElixirFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="depositoOuroFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Gold_Storage16.png?v=1687131482052" class="itens-img">
+        <h3 class="itens-nome">D. Ouro</h3>
+        <p class="itens-nivel">Nivel Máximo: 11</p>
+        <button class="itens-feito" onclick="feito('depositoOuroFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="depositoElixirFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Elixir_Storage16.png?v=1687131484464" class="itens-img">
+        <h3 class="itens-nome">D. Elixir</h3>
+        <p class="itens-nivel">Nivel Máximo: 11</p>
+        <button class="itens-feito" onclick="feito('depositoElixirFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="elixirNegroFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Dark_Elixir_Drill9.png?v=1687131484068" class="itens-img">
+        <h3 class="itens-nome">Elixir Ng</h3>
+        <p class="itens-nivel">Nivel Máximo: 7</p>
+        <button class="itens-feito" onclick="feito('elixirNegroFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="depositoNegroFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Dark_Elixir_Storage10.png?v=1687131483685" class="itens-img">
+        <h3 class="itens-nome">Dep Negro</h3>
+        <p class="itens-nivel">Nivel Máximo: 6</p>
+        <button class="itens-feito" onclick="feito('depositoNegroFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="torreClanFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Clan_Castle11.png?v=1687131483270" class="itens-img">
+        <h3 class="itens-nome">Clan</h3>
+        <p class="itens-nivel">Nivel Máximo: 6</p>
+        <button class="itens-feito" onclick="feito('torreClanFeito')">Concluir</button>
+    </div>
+    <div class="itens-div" id="muroFeito">
+        <img src="https://cdn.glitch.global/20c7df43-211a-43a2-b4e1-e904827863e3/Wall11.png?v=1687131855226" class="itens-img">
+        <h3 class="itens-nome">Muro</h3>
+        <p class="itens-nivel">Nivel Máximo: 11</p>
+        <button class="itens-feito" onclick="feito('muroFeito')">Concluir</button>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
