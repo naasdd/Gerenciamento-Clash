@@ -5,3 +5,5 @@
 
 # Gerenciamento-Clash
 Baseado no jogo Clash of Clans, este site te auxilia a monitorar seus upgrades para se organizar melhor antes de upar seu centro da vila.
+https://clashzin-brabo.glitch.me
+
